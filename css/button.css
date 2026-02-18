@@ -1,0 +1,91 @@
+/* ---ボタン設定--- */
+button {
+	background-color: var(--accent-bcolor);
+	color: var(--accent-tcolor);
+	font-weight: bold;
+	border: 1.5px solid var(--accent-tcolor);
+	padding: 8px 16px;
+	border-radius: 6px;
+	cursor: pointer;
+	margin-top: 0px;
+	transition: all 0.3s ease;
+}
+
+.dark-mode button {
+	background-color: #2d2d2d;
+	color: #b1bae0;
+	border-color: #555555;
+}
+
+button:hover {
+	transform: scale(1.01);
+}
+
+.toggle-text {
+	display: inline-block;
+	background-color: var(--accent-bcolor);
+	color: var(--accent-tcolor);
+	font-weight: bold;
+	text-decoration: underline;
+	cursor: pointer;
+	border-radius: 4px;
+	padding: 2px 4px;
+	white-space: pre;
+	-webkit-user-select: none;
+	font-family: var(--accent-font);
+	transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark-mode .toggle-text {
+	background-color: #2d2d2d;
+	color: #b1bae0;
+}
+
+.theme-toggle {
+	font-family: var(--main-font);
+	display: block;
+	position: fixed;
+	top: 12px;
+	left: 20px;
+	background-color: var(--main-bcolor);
+	border: 2px solid var(--accent-bcolor);
+	height: 45px;
+	width: 45px;
+	padding: 0;
+	border-radius: 50%;
+	cursor: pointer;
+	font-weight: bold;
+	transition: all 0.3s ease;
+	/* z-index: 1000; */
+}
+
+.dark-mode .theme-toggle {
+	background-color: #333333;
+	color: #e0e0e0;
+	border-color: #555555;
+}
+
+.theme-toggle:hover {
+	transform: scale(1.05);
+}
+
+
+@media (max-width:768px) {
+	.theme-toggle {
+		font-family: var(--main-font);
+		display: block;
+		position: fixed;
+		top: 12px;
+		left: 20px;
+		background-color: var(--main-bcolor);
+		border: 2px solid var(--accent-bcolor);
+		height: 45px;
+		width: 45px;
+		padding: 0;
+		border-radius: 50%;
+		cursor: pointer;
+		font-weight: bold;
+		transition: all 0.3s ease;
+		/* z-index: 1000; */
+	}
+}
