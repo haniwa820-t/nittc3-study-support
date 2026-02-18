@@ -5,19 +5,22 @@
 .label-item li {
 	color: #404040;
 	border-left: solid 6px var(--accent-tcolor);
-	/*左側の線*/
 	font-family: var(--accent-font);
 	border-bottom: solid 2px #dadada;
-	/*下に灰色線*/
 	background: whitesmoke;
 	margin-bottom: 5px;
-	/*下のバーとの余白*/
 	line-height: 1.5;
-	padding: 0.5em;
+	padding: 0;
 	list-style-type: none !important;
-	/*ポチ消す*/
 	font-weight: bold;
 	transition: all 0.3s;
+}
+
+.label-item li a {
+	display: block;
+	padding: 0.5em;
+	text-decoration: none;
+	color: inherit;
 }
 
 .label-item li:hover {
