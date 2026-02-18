@@ -32,6 +32,7 @@ button:hover {
 	padding: 2px 4px;
 	white-space: pre;
 	-webkit-user-select: none;
+	user-select: none;
 	font-family: var(--accent-font);
 	transition: background-color 0.3s ease, color 0.3s ease;
 }
@@ -45,12 +46,12 @@ button:hover {
 	font-family: var(--main-font);
 	display: block;
 	position: fixed;
-	top: 12px;
+	top: 5px;
 	left: 20px;
 	background-color: var(--main-bcolor);
 	border: 2px solid var(--accent-bcolor);
-	height: 45px;
-	width: 45px;
+	height: 40px;
+	width: 40px;
 	padding: 0;
 	border-radius: 50%;
 	cursor: pointer;
@@ -71,23 +72,6 @@ button:hover {
 
 
 @media (max-width:768px) {
-	.theme-toggle {
-		font-family: var(--main-font);
-		display: block;
-		position: fixed;
-		top: 12px;
-		left: 20px;
-		background-color: var(--main-bcolor);
-		border: 2px solid var(--accent-bcolor);
-		height: 45px;
-		width: 45px;
-		padding: 0;
-		border-radius: 50%;
-		cursor: pointer;
-		font-weight: bold;
-		transition: all 0.3s ease;
-		/* z-index: 1000; */
-	}
 }
 
 /*ページトップボタン*/
