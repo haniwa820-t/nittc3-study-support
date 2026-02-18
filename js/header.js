@@ -38,11 +38,6 @@ document.addEventListener('DOMContentLoaded', function () {
 	// メニュー項目を追加
 	const menuItems = [
 		{ text: 'HOME', href: '../../index.html'},
-		{ text: '漢字テスト6', href: 'print1.html' },
-		{ text: '漢字テスト7', href: 'print2.html' },
-		{ text: '漢字テスト8', href: 'print3.html' },
-		{ text: '漢字テスト9', href: 'print4.html' },
-		{ text: '漢字テスト10', href: 'print5.html' }
 	];
 
 	menuItems.forEach(item => {
