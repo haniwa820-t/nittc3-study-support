@@ -1,34 +1,13 @@
 /* ---見出し設定--- */
 h1 {
-	margin: 20px;
-	color: var(--accent-tcolor);
 	font-family: var(--accent-font);
-	transition: color 0.3s ease;
-	position: relative;
-	padding: 0.25em 1em;
-	border: solid 2px black;
-	border-radius: 3px 0 3px 0;
+	color: var(--accent-tcolor);
 	text-align: center;
-}
-
-h1:before,
-h1:after {
-	content: '';
-	position: absolute;
-	width: 10px;
-	height: 10px;
-	border: solid 2px black;
-	border-radius: 50%;
-}
-
-h1:after {
-	top: -12px;
-	left: -12px;
-}
-
-h1:before {
-	bottom: -12px;
-	right: -12px;
+	padding: 0.25em;
+	border-top: solid 2px var(--accent-tcolor);
+	border-bottom: solid 2px var(--accent-tcolor);
+	background: -webkit-repeating-linear-gradient(-45deg, var(--accent-bcolor), var(--accent-bcolor) 3px, var(--main-bcolor) 3px, var(--main-bcolor) 7px);
+	background: repeating-linear-gradient(-45deg, var(--accent-bcolor), var(--accent-bcolor) 3px, var(--main-bcolor) 3px, var(--main-bcolor) 7px);
 }
 
 .dark-mode h1 {

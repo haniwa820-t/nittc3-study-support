@@ -44,6 +44,18 @@ body.dark-mode {
 	margin: 5px;
 }
 
+.flex-box {
+	display: flex;
+	justify-content: space-around;
+	gap: 10px;
+	flex-wrap: wrap;
+}
+
+.flex-children {
+	flex-grow: 1;
+	min-width: 250px;
+}
+
 @media (max-width: 768px) {
 	body {
 		max-width: 95%;
