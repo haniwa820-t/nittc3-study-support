@@ -1,5 +1,6 @@
 /* ---見出し設定--- */
 h1 {
+	margin-bottom: 25px;
 	font-family: var(--accent-font);
 	color: var(--accent-tcolor);
 	text-align: center;
