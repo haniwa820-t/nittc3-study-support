@@ -1,0 +1,25 @@
+/* ---箇条書き設定--- */
+.hist-main ul {
+	list-style: none;
+	padding-left: 0;
+}
+
+.hist-main ul li {
+	border-top: 1px dashed #a1a1a1;
+	padding-top: 5px;
+}
+
+.hist-main ul li ul {
+	list-style: none;
+	padding-left: 1.5em;
+}
+
+.hist-main ul li ul li::before {
+	content: '';
+	display: inline-block;
+	width: auto;
+	height: auto;
+	background-image: none;
+	vertical-align: middle;
+	margin-right: 0;
+}

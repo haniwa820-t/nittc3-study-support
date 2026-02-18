@@ -1,6 +1,7 @@
 @import url(header.css);
 @import url(table.css);
 @import url(button.css);
+@import url(headline.css);
 
 /* ---本体設定--- */
 @font-face {
@@ -20,7 +21,6 @@
 
 html {
 	scroll-behavior: smooth;
-	container-type: scroll-state;
 }
 
 body {
@@ -48,78 +48,7 @@ body.dark-mode {
 		max-width: 95%;
 		font-size: 16px;
 	}
-
-	h1 {
-		font-size: 24px;
-	}
-
-	h2 {
-		font-size: 20px;
-	}
-
-	h3 {
-		font-size: 18px;
-	}
 }
-
-
-/* ---見出し設定--- */
-
-h1 {
-	color: var(--accent-tcolor);
-	font-family: var(--accent-font);
-	transition: color 0.3s ease;
-}
-
-.dark-mode h1 {
-	color: #b1bae0;
-}
-
-h3::before {
-	content: '';
-	display: inline-block;
-	margin-right: 0.1em;
-	padding-bottom: 4;
-	width: 20px;
-	height: 20px;
-	background-image: url(img/はにわ_fill.jpg);
-	background-size: contain;
-	background-repeat: no-repeat;
-	vertical-align: middle;
-	filter: invert(0%);
-}
-
-.dark-mode h3::before {
-	filter: invert(100%);
-}
-
-/* ---箇条書き設定--- */
-.hist-main ul {
-	list-style: none;
-	padding-left: 0;
-}
-
-.hist-main ul li {
-	border-top: 1px dashed #a1a1a1;
-	padding-top: 5px;
-}
-
-.hist-main ul li ul {
-	list-style: none;
-	padding-left: 1.5em;
-}
-
-.hist-main ul li ul li::before {
-	content: '';
-	display: inline-block;
-	width: auto;
-	height: auto;
-	background-image: none;
-	vertical-align: middle;
-	margin-right: 0;
-}
-
-/* ---その他--- */
 
 a {
 	color: #001b54;

@@ -1,0 +1,44 @@
+/* ---見出し設定--- */
+
+h1 {
+	color: var(--accent-tcolor);
+	font-family: var(--accent-font);
+	transition: color 0.3s ease;
+}
+
+.dark-mode h1 {
+	color: #b1bae0;
+}
+
+h3::before {
+	content: '';
+	display: inline-block;
+	margin-right: 0.1em;
+	padding-bottom: 4;
+	width: 20px;
+	height: 20px;
+	background-image: url(img/はにわ_fill.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	vertical-align: middle;
+	filter: invert(0%);
+}
+
+.dark-mode h3::before {
+	filter: invert(100%);
+}
+
+
+@media (max-width: 768px) {
+	h1 {
+		font-size: 24px;
+	}
+
+	h2 {
+		font-size: 20px;
+	}
+
+	h3 {
+		font-size: 18px;
+	}
+}
