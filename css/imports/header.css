@@ -10,6 +10,17 @@ header {
 	flex: auto;
 }
 
+.watermark {
+	position: absolute;
+	font-family: var(--sansSerif-font);
+	font-weight: bold;
+	text-align: center;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 100%;
+	opacity: calc(0.5);
+}
+
 /* ---リンクナビ設定--- */
 .nav-box {
 	overflow-x: auto;
@@ -83,10 +94,6 @@ header {
 	transition: 0.4s;
 }
 
-.dark-mode .menu-icon span {
-	background: #e0e0e0;
-}
-
 #menu-toggle:checked+.menu-icon span:nth-child(1) {
 	transform: translateY(10px) rotate(45deg);
 }
@@ -127,10 +134,6 @@ header {
 	z-index: 2;
 }
 
-.dark-mode .menu {
-	background: #2a2a2a;
-}
-
 #menu-toggle:checked~.menu {
 	right: 0;
 	/* ← 開いたときは左0へ */
@@ -154,13 +157,47 @@ header {
 	transition: color 0.3s;
 }
 
-.dark-mode .menu a {
-	color: #e0e0e0;
-}
-
 .menu a:hover {
 	color: #007bff;
 }
 
-@media (max-width: 768px) {
+.toggle-text {
+	display: inline-block;
+	background-color: var(--accent-bcolor);
+	color: var(--accent-tcolor);
+	font-weight: bold;
+	text-decoration: underline;
+	cursor: pointer;
+	border-radius: 4px;
+	padding: 2px 4px;
+	white-space: pre;
+	-webkit-user-select: none;
+	user-select: none;
+	font-family: var(--sansSerif-font);
+	transition: background-color 0.3s ease, color 0.3s ease;
 }
+
+.theme-toggle {
+	font-family: var(--serif-font);
+	display: block;
+	position: fixed;
+	top: 5px;
+	left: 20px;
+	background-color: var(--main-bcolor);
+	border: 2px solid var(--accent-bcolor);
+	height: 40px;
+	width: 40px;
+	padding: 0;
+	border-radius: 50%;
+	cursor: pointer;
+	font-weight: bold;
+	transition: all 0.3s ease;
+	z-index: 1000;
+}
+
+.theme-toggle:hover {
+	transform: scale(1.05);
+}
+
+
+@media (max-width: 768px) {}

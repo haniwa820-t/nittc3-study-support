@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	// メニュー項目を追加
 	const menuItems = [
-		{ text: 'HOME', href: '../../index.html'},
+		{ text: 'HOME', href: 'index.html'},
 	];
 
 	menuItems.forEach(item => {
@@ -55,6 +55,10 @@ document.addEventListener('DOMContentLoaded', function () {
 	themeToggle.textContent = '🌓';
 	themeToggle.onclick = toggleTheme;
 
+	const watermark = document.createElement('p');
+	watermark.className = 'watermark';
+	watermark.textContent = 'テスト対策IE3';
+
 	// 要素を組み立てる
 	nav.appendChild(ul);
 	menuWrapper.appendChild(menuToggle);
@@ -63,6 +67,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	menuWrapper.appendChild(nav);
 	header.appendChild(menuWrapper);
 	header.appendChild(themeToggle);
+	header.appendChild(watermark);
 
 	// ドキュメントに追加（bodyの先頭に追加する場合）
 	document.body.insertBefore(header, document.body.firstChild);

@@ -1,0 +1,44 @@
+\documentclass{jlreq}
+\usepackage[top=20truemm,bottom=20truemm,left=20truemm,right=20truemm]{geometry}
+%
+\title{\LaTeX でレポート}
+\author{山根義琉}
+\date{\today}
+\begin{document}
+\maketitle
+\tableofcontents
+\section{数式}
+\subsection{ブロック}
+ガウス積分：
+\[
+\int_{-\infty}^{\infty} e^{-x^2} dx = \sqrt{\pi}
+\]
+
+オイラーの公式：
+\[
+e^{i\theta} = \cos\theta + i\sin\theta
+\]
+
+自然対数の定義：
+\[
+\lim_{n \to \infty} \left(1 + \frac{1}{n}\right)^n = e
+\]
+
+テイラー展開：
+\[
+f(x) = \sum_{n=0}^{\infty} \frac{f^{(n)}(a)}{n!} (x-a)^n
+\]
+\subsection{インライン}
+二次方程式 $ax^2 + bx + c = 0$ ($a \neq 0$) の解は：
+
+\[
+x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+\]
+
+判別式 $D = b^2 - 4ac$ により：
+\begin{itemize}
+    \item $D > 0$ のとき、異なる2つの実数解
+    \item $D = 0$ のとき、重解
+    \item $D < 0$ のとき、共役な2つの複素数解
+\end{itemize}
+\end{document}

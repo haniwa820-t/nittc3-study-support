@@ -1,8 +1,8 @@
-@import url(header.css);
-@import url(table.css);
-@import url(button.css);
-@import url(headline.css);
-@import url(items.css);
+@import url(imports/header.css);
+@import url(imports/table.css);
+@import url(imports/button.css);
+@import url(imports/headline.css);
+@import url(imports/items.css);
 
 /* ---本体設定--- */
 @font-face {
@@ -16,8 +16,15 @@
 	--main-bcolor: #ffffff;
 	--accent-tcolor: #a20000;
 	--accent-bcolor: #fff4f4;
-	--main-font: "YuMincho", "Hiragino Mincho ProN W3", "Hiragino Mincho ProN", serif;
-	--accent-font: "Hiragino Kaku Gothic ProN", "Yu Gothic", "Noto Sans JP", sans-serif;
+	--serif-font: "YuMincho", "Hiragino Mincho ProN W3", "Hiragino Mincho ProN", serif;
+	--sansSerif-font: "Hiragino Kaku Gothic ProN", "Yu Gothic", "Noto Sans JP", sans-serif;
+}
+
+.dark-mode * {
+	--main-tcolor: #232323;
+	--main-bcolor: #ffffff;
+	--accent-tcolor: #a20000;
+	--accent-bcolor: #fff4f4;
 }
 
 html {
@@ -31,13 +38,8 @@ body {
 	background-color: var(--main-bcolor);
 	font-size: 16px;
 	color: var(--main-tcolor);
-	font-family: var(--main-font);
+	font-family: var(--serif-font);
 	transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-body.dark-mode {
-	background-color: #1a1a1a;
-	color: #e0e0e0;
 }
 
 .hist-main {
@@ -52,9 +54,8 @@ body.dark-mode {
 }
 
 .flex-children {
-	flex-grow: 1;
-	flex-shrink: 1;
-	flex-basis: 0;
+	flex: 1 1 0;
+	/* grow shrink basis */
 	min-width: 250px;
 }
 
@@ -68,12 +69,4 @@ body.dark-mode {
 a {
 	color: #001b54;
 	text-decoration: none;
-}
-
-.dark-mode a {
-	color: #b6d9ff;
-}
-
-.dark-mode img {
-	filter: invert(30%);
 }

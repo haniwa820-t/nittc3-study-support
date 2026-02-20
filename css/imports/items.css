@@ -5,7 +5,7 @@
 .label-item li {
 	color: #404040;
 	border-left: solid 6px var(--accent-tcolor);
-	font-family: var(--accent-font);
+	font-family: var(--sansSerif-font);
 	border-bottom: solid 2px #dadada;
 	background: whitesmoke;
 	margin-bottom: 5px;
